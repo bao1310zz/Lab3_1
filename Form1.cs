@@ -25,7 +25,7 @@ namespace Lab3_1
         private void openToolStripMenuItem_Click(object sender, EventArgs e)
         {
          OpenFileDialog dlg = new OpenFileDialog();
-         dlg.Filter = "AVI file| *.avi | MPEG File | *.mpeg | Wav File |  *.Wav | Midi File | *.midi | Mp4 File | *.mp4 | MP3 | *.mp3";
+         dlg.Filter = "AVI file|*.avi| MPEG File |*.mpeg| Wav File |*.Wav| Midi File |*.midi| Mp4 File |*.mp4| MP3 |*.mp3";
              if (dlg.ShowDialog() == DialogResult.OK)
                 axWindowsMediaPlayer1.URL = dlg.FileName;
         }
